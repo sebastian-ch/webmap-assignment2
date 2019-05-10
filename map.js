@@ -5,3 +5,4 @@ style: 'mapbox://styles/mapbox/streets-v11',
 center: [-157.465, 20.701], // starting position [lng, lat]
 zoom: 5.4 // starting zoom
 });
+
