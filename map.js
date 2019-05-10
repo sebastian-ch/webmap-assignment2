@@ -6,3 +6,6 @@ center: [-157.465, 20.701], // starting position [lng, lat]
 zoom: 5.4 // starting zoom
 });
 
+var centerMarker = new mapboxgl.Marker()
+    .setLngLat(map.getCenter())
+    .addTo(map);
