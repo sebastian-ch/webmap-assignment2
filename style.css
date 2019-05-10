@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    font-family: Lato, sans-serif;
+    color: #0D0000;
+
+
+}
+
+h1,
+h2,
+h4,
+.small,
+p {
+    width: 70%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+.map {
+    width: 450px;
+    height: 318px;
+    margin: 10px auto 10px auto;
+    background: whitesmoke;
+    border: 2px solid black;
+    background-image: url('hawaii.jpg');
+}
+
+.marker {
+    position: relative;
+    z-index: 1;
+    top: 81px;
+    left: 189px;
+    width: 20px;
+    height: 20px;
+    background-image: url('heart.svg')
+}
+
+#mapbox-map {
+    height: 500px;
+    width: 60%;
+    margin: 10px auto 10px auto;
+    border: 2px solid black;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
