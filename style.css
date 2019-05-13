@@ -19,6 +19,18 @@ p {
     text-align: center;
 }
 
+#rectangle {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    opacity: 0.5;
+    border: 1px solid red;
+    z-index: 200;
+}
+
 .map {
     width: 450px;
     height: 318px;
