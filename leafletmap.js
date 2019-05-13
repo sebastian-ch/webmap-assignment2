@@ -28,3 +28,19 @@ var polygon = L.polygon([
 
 //binds a popup to the polygon and opens it when the map loads
 polygon.bindPopup('omg polygon').openPopup();
+
+
+//adds circle
+var circle = L.circleMarker([22.069, -159.500], {
+    radius:  15,
+    weight: 1.5,
+    color: 'purple',
+    fillColor: 'purple',
+    opacity: 0.4
+}).addTo(map);
+
+circle.bindPopup("here's a circle!");
+
+
+//sets max bounds as current bounds, so you can't move away from hawaii
+map.setMaxBounds(map.getBounds());
