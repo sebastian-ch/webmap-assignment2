@@ -4,22 +4,24 @@
 <head>
 
     <meta charset="utf-8">
-    <title>A simple map</title>
+    <title>web maps</title>
 
+    <!--font from google fonts-->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 
+    <!--leaflet and mapbox libraries -- needed to use mapbox and leaflet-->
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
     <link href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" rel="stylesheet" />
-    <link href='style.css' rel='stylesheet' >
-
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
     
-    
-    
 
+    <!--my stylesheet-->
+    <link href='style.css' rel='stylesheet' >
+    
+    
 </head>
 
 <body>
@@ -39,11 +41,13 @@
     </p>
     <h2>Mapbox Map</h2>
     <div id='mapbox-map'></div>
+    <!--code for mapbox map-->
     <script src='map.js'></script>
     <p>---------------------------------------------------------------------------------------------------------------
     </p>
     <h2>Leaflet Map (cause I'm wild)</h2>
     <div id='leaflet-map'></div>
+    <!--code for leaflet map-->
     <script src='leafletmap.js'></script>
     
 
