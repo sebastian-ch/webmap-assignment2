@@ -38,7 +38,7 @@ p {
     background-image: url('heart.svg')
 }
 
-#mapbox-map {
+#mapbox-map, #leaflet-map {
     height: 500px;
     width: 60%;
     margin: 10px auto 10px auto;
