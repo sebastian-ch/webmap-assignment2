@@ -14,8 +14,17 @@ layer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{
 }).addTo(map);
 
 
+//add volcano icon
+var myIcon = L.icon({
+    iconUrl: 'icons/volcano.png',
+    iconSize: [30, 30],
+    iconAnchor: [20, 21]
+   
+})
+
+
 //adds marker to map and binds a popup on click
-var marker = L.marker([19.828, -155.470]).addTo(map);
+var marker = L.marker([19.828, -155.470], {icon: myIcon}).addTo(map);
 marker.bindPopup('Mauna Kea');
 
 //add polygon to map
