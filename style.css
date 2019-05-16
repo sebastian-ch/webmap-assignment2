@@ -28,17 +28,14 @@ p {
     top: 100px;
     opacity: 0.4;
     z-index: 200;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #rectangle:hover {
-   /* background-color: yellow; */
-   z-index: 200;
+    background-color: yellow;
+    z-index: 200;
     opacity: 1;
-    width: 170px;
-    height: 220px;
-    
-    background-image: url('icons/looch2.JPG');
+   
 }
 
 .map {
@@ -51,7 +48,7 @@ p {
 }
 
 .heart-marker {
-   position: relative;
+    position: relative;
     z-index: 1;
     top: 63px;
     left: 189px;
@@ -59,6 +56,7 @@ p {
     height: 20px;
     background-image: url('icons/heart.svg')
 }
+
 .fish-marker {
     position: relative;
     z-index: 1;
@@ -81,7 +79,8 @@ p {
 }
 
 
-#mapbox-map, #leaflet-map {
+#mapbox-map,
+#leaflet-map {
     height: 500px;
     width: 60%;
     margin: 10px auto 10px auto;
