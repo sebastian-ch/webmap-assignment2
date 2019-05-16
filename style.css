@@ -26,9 +26,19 @@ p {
     position: relative;
     left: 100px;
     top: 100px;
-    opacity: 0.5;
-    border: 1px solid red;
+    opacity: 0.4;
     z-index: 200;
+    transition: 1s;
+}
+
+#rectangle:hover {
+   /* background-color: yellow; */
+   z-index: 200;
+    opacity: 1;
+    width: 170px;
+    height: 220px;
+    
+    background-image: url('icons/looch2.JPG');
 }
 
 .map {
@@ -40,15 +50,36 @@ p {
     background-image: url('hawaii.jpg');
 }
 
-.marker {
-    position: relative;
+.heart-marker {
+   position: relative;
     z-index: 1;
-    top: 81px;
+    top: 63px;
     left: 189px;
     width: 20px;
     height: 20px;
     background-image: url('heart.svg')
 }
+.fish-marker {
+    position: relative;
+    z-index: 1;
+    top: 93px;
+    left: 189px;
+    width: 20px;
+    height: 20px;
+    background-image: url('icons/aquarium-15.svg');
+}
+
+.wave-marker {
+    position: relative;
+    z-index: 2;
+    top: 83px;
+    left: 39px;
+    width: 200px;
+    height: 200px;
+    background-image: url('icons/wave.jpg');
+    transform: scale(0.5, 0.5);
+}
+
 
 #mapbox-map, #leaflet-map {
     height: 500px;
