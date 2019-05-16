@@ -6,6 +6,10 @@ var map = new mapboxgl.Map({
     zoom: 5.4 // starting zoom
 });
 
+var popup = new mapboxgl.Popup({ offset: 25 })
+    .setText('Here is the center of this map.');
+
 var centerMarker = new mapboxgl.Marker()
     .setLngLat(map.getCenter())
+    .setPopup(popup)
     .addTo(map);
